@@ -1,5 +1,5 @@
 body {
-    background-color: #a78fff;
+    background-color: #D0BFFF;
 }
 
 #body-container {
@@ -8,11 +8,12 @@ body {
     align-items: center;
     height: 100vh;
     margin: 10px;
-    background-color: #D0BFFF;
 }
 
 #button-container {
     display: flex;
+    background-color: #a78fff;
+    border-radius: 10px;
     justify-content: center;
     padding: 10px;
     gap: 20px;
@@ -24,6 +25,9 @@ button {
     flex: 1;
     height: 60px;
     min-width: 60px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
     background-color: #FFF3DA;
     justify-content: center;
     align-items: center;
