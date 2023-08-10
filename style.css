@@ -32,6 +32,7 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: 0.5s;
 }
 
 button * {
@@ -53,4 +54,5 @@ button:hover {
 
 .pixel {
     flex: 1;
+    transition: 0.5s;
 }
