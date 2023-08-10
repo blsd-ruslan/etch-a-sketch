@@ -32,7 +32,7 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 button * {
@@ -41,6 +41,7 @@ button * {
 
 button:hover {
     background-color: #d1c6b0;
+    transform: scale(1.05, 1.05);
 }
 
 #div-container {
