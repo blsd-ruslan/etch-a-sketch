@@ -1,11 +1,29 @@
 const divContainer = document.querySelector('#div-container');
 const btnAmountPixels = document.querySelector('#enter-amount-pixels');
 const btnClearCanvas = document.querySelector('#clear-canvas');
-console.log(btnClearCanvas);
+const btnBrush = document.querySelector('#brush-tool');
+const btnEraser = document.querySelector('#eraser-tool');
+
+// possible values "black" and "white" for brush and eraser
+let color = "black";
+
+
+
+createCanvas(32);
+
+
 btnClearCanvas.addEventListener('click', () =>
 clearCanvas());
+
 btnAmountPixels.addEventListener('click', () =>
 createCanvas(parseInt(prompt("Please enter amount of pixels(1-100):", "32"))));
+
+btnBrush.addEventListener('click', () =>
+color="black");
+
+btnEraser.addEventListener('click', () =>
+color="white");
+
 
 function createCanvas(amount) {
     if (!Number.isInteger(amount) || amount > 100 || amount < 1) {
@@ -38,7 +56,7 @@ function generateDivs(amount) {
             let squareDiv = document.createElement('div');
             squareDiv.style.backgroundColor = 'white';
             squareDiv.addEventListener("mouseover", () =>
-            squareDiv.style.backgroundColor = 'black');
+            squareDiv.style.backgroundColor = color);
             squareDiv.className = 'pixel';
             squareDiv.style.flex = '1';
             squareDiv.style.flexShrink = '0';

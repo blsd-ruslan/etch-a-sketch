@@ -1,14 +1,41 @@
+body {
+    background-color: #a78fff;
+}
+
 #body-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: orange;
+    margin: 10px;
+    background-color: #D0BFFF;
 }
 
 #button-container {
     display: flex;
+    justify-content: center;
+    padding: 10px;
     gap: 20px;
+}
+
+button {
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    height: 60px;
+    min-width: 60px;
+    background-color: #FFF3DA;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button * {
+    flex: 1;
+}
+
+button:hover {
+    background-color: #d1c6b0;
 }
 
 #div-container {
@@ -17,7 +44,7 @@
     /*background-color: blue;*/
     width: 512px;
     height: 512px;
-    background-color: blue;
+    background-color: white;
 }
 
 .pixel {
